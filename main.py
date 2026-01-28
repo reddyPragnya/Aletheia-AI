@@ -7,7 +7,7 @@ from langchain_core.prompts import PromptTemplate
 from datetime import datetime
 
 # --- 🔑 API KEY SETUP ---
-GOOGLE_API_KEY = "AIzaSyBZRXVYtuAKRbQBV1GxhSEaunA1qDSZgis"  # REPLACE WITH YOUR ACTUAL KEY
+GOOGLE_API_KEY = "YOUR-GOOGLE-API-KEY"  # REPLACE WITH YOUR ACTUAL KEY
 
 # --- CONFIGURATION ---
 st.set_page_config(page_title="Aletheia AI", layout="wide", page_icon="🗞")
@@ -285,4 +285,5 @@ if 'articles' in st.session_state:
                 if submitted:
                     st.balloons()
                     st.success(f"Published successfully to {', '.join(platform)}!")
+
             st.markdown('</div>', unsafe_allow_html=True)
